@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Footer1" id="U6b-Vx-4bR" customClass="Footer1CollectionReusableView" customModule="Latvijas_Radio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-nU-h2l">
+                    <rect key="frame" x="0.0" y="10" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-60-9V7">
+                            <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lvv-9s-UxL">
+                            <rect key="frame" x="89.666666666666671" y="0.0" width="140.66666666666663" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iQ-3I-bFB">
+                                    <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="g8l-he-GPh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iir-OG-epi">
+                                    <rect key="frame" x="0.0" y="10" width="140.66666666666666" height="25"/>
+                                    <color key="tintColor" name="lr-black"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="remove_all_history"/>
+                                    <connections>
+                                        <action selector="clearHistoryClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="a0M-TI-cZ9"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-QD-gHY">
+                                    <rect key="frame" x="0.0" y="35" width="140.66666666666666" height="5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="2iQ-3I-bFB" firstAttribute="leading" secondItem="iir-OG-epi" secondAttribute="leading" id="3QG-NV-YZ3"/>
+                                <constraint firstItem="2iQ-3I-bFB" firstAttribute="height" secondItem="jUg-QD-gHY" secondAttribute="height" multiplier="2" id="ZeW-Q9-Eou"/>
+                                <constraint firstItem="jUg-QD-gHY" firstAttribute="leading" secondItem="iir-OG-epi" secondAttribute="leading" id="Zfq-6L-uRR"/>
+                                <constraint firstItem="2iQ-3I-bFB" firstAttribute="trailing" secondItem="iir-OG-epi" secondAttribute="trailing" id="hJp-ce-vag"/>
+                                <constraint firstItem="jUg-QD-gHY" firstAttribute="trailing" secondItem="iir-OG-epi" secondAttribute="trailing" id="iJS-Ad-dcr"/>
+                                <constraint firstItem="2iQ-3I-bFB" firstAttribute="width" secondItem="iir-OG-epi" secondAttribute="width" id="tWy-rU-uu4"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITB-9h-uMo">
+                            <rect key="frame" x="230.33333333333334" y="0.0" width="89.666666666666657" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Lvv-9s-UxL" firstAttribute="centerX" secondItem="rIB-nU-h2l" secondAttribute="centerX" id="bdT-D7-ZHC"/>
+                        <constraint firstItem="Lvv-9s-UxL" firstAttribute="centerY" secondItem="rIB-nU-h2l" secondAttribute="centerY" id="kBa-nY-tGw"/>
+                        <constraint firstItem="OLb-60-9V7" firstAttribute="width" secondItem="ITB-9h-uMo" secondAttribute="width" id="oih-Kz-OJV"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" name="lr-white"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rIB-nU-h2l" secondAttribute="bottom" constant="10" id="2uk-ym-lpB"/>
+                <constraint firstAttribute="trailing" secondItem="rIB-nU-h2l" secondAttribute="trailing" id="8Ni-4x-M0u"/>
+                <constraint firstItem="rIB-nU-h2l" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="FJ8-bd-na5"/>
+                <constraint firstItem="rIB-nU-h2l" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Qh2-Qv-ivh"/>
+                <constraint firstItem="rIB-nU-h2l" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="xYJ-aX-odb"/>
+            </constraints>
+            <connections>
+                <outlet property="button1" destination="iir-OG-epi" id="Ase-Kk-jJq"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="-11"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="lr-black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
